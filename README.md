@@ -5,6 +5,7 @@ This is a starter kit for developers who want to use Tailwind CSS in plain HTML 
 ## Dependencies
 
 [node.js](https://nodejs.org/)
+
 [live-server](https://www.npmjs.com/package/live-server)
 
 ## Installation
