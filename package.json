@@ -1,0 +1,31 @@
+{
+	"name": "html-tailwind-starter",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"watch": {
+		"build": {
+			"patterns": [
+				"base",
+				"src"
+			],
+			"extensions": "html, css"
+		}
+	},
+	"scripts": {
+		"watch": "npm-watch",
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"build": "postcss base/global.css -o src/css/style.css",
+		"dev": "concurrently \"npm run build\" \"live-server src --port=8080\" \"npm run watch\""
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"autoprefixer": "^10.4.16",
+		"concurrently": "^8.2.2",
+		"npm-watch": "^0.11.0",
+		"postcss-cli": "^11.0.0",
+		"tailwindcss": "^3.4.0"
+	}
+}
